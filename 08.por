@@ -1,17 +1,19 @@
 programa
 {
-	inclua biblioteca Util --> u
-
 	
 	funcao inicio()
 	{
-		cadeia nome [] = {"Pedro H", "Tiago","Márcio","Kauã","Mário","Pedro D","Issac",
-		"Dryelle","João","Adriel","Paulo","Deivisson","Luan","Eric","Lucas"}
+		inteiro N
 		
-	 inteiro n = u.numero_elementos(nome)
-	 inteiro sorteio
-	 sorteio = sorteia (0,n)
-	 escreva (nome[sorteio])		
+		escreva ("Digite um número qualquer")
+		leia(N)
+		
+		se (N % 2 == 0){
+			escreva ("O número ", N, " é par")
+		}
+		senao {
+			escreva ("O número ", N, " é impar")	
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -19,7 +21,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 328; 
+ * @POSICAO-CURSOR = 217; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
